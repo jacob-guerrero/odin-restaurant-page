@@ -1,0 +1,24 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "This is a Restaurant Page made with JavaScript, CSS and using webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob-guerrero/odin-restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacob-guerrero/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/jacob-guerrero/odin-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
