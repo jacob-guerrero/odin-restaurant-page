@@ -33,7 +33,7 @@ const contact = () => {
 
   const content = document.querySelector("#content");
   content.appendChild(title);
-  content.appendChild(mainContainer);
+  content.appendChild(mainContainer); 
 };
 
 export { contact };
