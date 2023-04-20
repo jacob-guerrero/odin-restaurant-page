@@ -1,6 +1,7 @@
 import { pageLoad } from "./initial";
 import { contact } from "./contact";
 import { menu } from "./menu";
+import './style.css';
 
 const tabs = document.querySelectorAll('.tab');
 const content = document.querySelector('#content');
