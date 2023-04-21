@@ -18,6 +18,12 @@ html {
     --blue-light: #00afb9;
     --blue-dark: #0081a7;
 }
+@font-face {
+    font-family: 'Dance Font';
+    src: url('./DancingScript-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
 html, body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,7 +38,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2rem 3rem 2rem 3rem;
-    background-color: var(--main-color);
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./bg2pattern.jpg") repeat, var(--main-color);
+    background-size: 100% 50%;
 }
 
 header {
@@ -59,7 +66,9 @@ header {
     font-size: 1.4rem;
     font-weight: bold;
     border-radius: 5px  5px 0% 0%;
-    background-color: var(--gray-light);
+    background-color: var(--main-color);
+    /* background-image: url("./squares.jpg") ; */
+    background-size: cover;
 }
 ul {
     list-style-type: none;
@@ -70,13 +79,50 @@ li {
     display: inline-block;
 }
 
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--gray-light);
+    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("./bg3light.jpg") center, var(--main-color);
+    background-size: cover;
+}
+
+
+.main-div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.main-title {
+    font-family: 'Dance Font','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    border-bottom: 5px double black;
+    padding: 0.2rem 0.5rem;
+}
 img {
     width: 60%;
     height: auto;
-    border-radius: 4%;
+    border-radius: 5%;
+
+    --s: 8px; /* control the size */
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    /* outline: 2px solid #000; */
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 2px 2px,#0000 25%,#000 0);
 }
 
-#content {
-    padding: 1.2rem;
-    border: 1px solid black;
+.description {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.description::after, .description::before {
+    content: '"';
 }
