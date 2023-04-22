@@ -10,11 +10,15 @@ const menu = () => {
   mainDiv.appendChild(title);
 
   const mainContainer = document.createElement("div");
+  mainContainer.classList.add('main-container')
 
   // Appetizers:
   const appetizerContainer = document.createElement("div");
+  appetizerContainer.classList.add('course');
   const appetizerOne = document.createElement('div');
+  appetizerOne.classList.add('box');
   const appetizer = document.createElement("h2");
+  appetizer.classList.add('course-title');
   appetizer.textContent = "Appetizer";
   const appetizerNameOne = document.createElement("h3");
   appetizerNameOne.textContent = "Chocolate-Stuffed Strawberries";
@@ -22,12 +26,14 @@ const menu = () => {
   appetizerDescriptionOne.textContent = "Fresh strawberries filled with creamy chocolate ganache, served with a dollop of whipped cream and a sprinkle of cocoa powder.";
 
   const appetizerTwo = document.createElement('div');
+  appetizerTwo.classList.add('box');
   const appetizerNameTwo = document.createElement("h3");
   appetizerNameTwo.textContent = "Chocolate and Cheese Board";
   const appetizerDescriptionTwo = document.createElement("p");
   appetizerDescriptionTwo.textContent = "A selection of artisanal cheeses paired with rich chocolate, fresh fruit, and toasted nuts.";
 
   const appetizerThree = document.createElement('div');
+  appetizerThree.classList.add('box');
   const appetizerNameThree = document.createElement("h3");
   appetizerNameThree.textContent = "Cocoa-Dusted Popcorn";
   const appetizerDescriptionThree = document.createElement("p");
@@ -45,8 +51,11 @@ const menu = () => {
 
   // Entrees:
   const entreeContainer = document.createElement("div");
+  entreeContainer.classList.add('course');
   const entreeOne = document.createElement('div');
+  entreeOne.classList.add('box');
   const entree = document.createElement("h2");
+  entree.classList.add('course-title');
   entree.textContent = "Entree";
   const entreeNameOne = document.createElement("h3");
   entreeNameOne.textContent = "Cocoa-Rubbed Steak";
@@ -54,12 +63,14 @@ const menu = () => {
   entreeDescriptionOne.textContent = "A juicy steak seasoned with a blend of cocoa powder, smoked paprika, and spices, served with a side of roasted sweet potatoes and sautéed kale.";
   
   const entreeTwo = document.createElement('div');
+  entreeTwo.classList.add('box');
   const entreeNameTwo = document.createElement("h3");
   entreeNameTwo.textContent = "Chocolate-Crusted Salmon";
   const entreeDescriptionTwo = document.createElement("p");
   entreeDescriptionTwo.textContent = "A fillet of fresh salmon coated in a crunchy chocolate crust, served with a side of roasted vegetables and a drizzle of balsamic reduction.";
 
   const entreeThree = document.createElement('div');
+  entreeThree.classList.add('box');
   const entreeNameThree = document.createElement("h3");
   entreeNameThree.textContent = "Mushroom and Truffle Risotto";
   const entreeDescriptionThree = document.createElement("p");
@@ -77,8 +88,11 @@ const menu = () => {
 
   // Desserts:
   const dessertContainer = document.createElement("div");
+  dessertContainer.classList.add('course');
   const dessertOne = document.createElement('div');
+  dessertOne.classList.add('box');
   const dessert = document.createElement("h2");
+  dessert.classList.add('course-title');
   dessert.textContent = "Dessert";
   const dessertNameOne = document.createElement("h3");
   dessertNameOne.textContent = "Chocolate Molten Cake";
@@ -86,12 +100,14 @@ const menu = () => {
   dessertDescriptionOne.textContent = "A warm, gooey chocolate cake with a molten center, served with a scoop of vanilla ice cream and fresh berries.";
 
   const dessertTwo = document.createElement('div');
+  dessertTwo.classList.add('box');
   const dessertNameTwo = document.createElement("h3");
   dessertNameTwo.textContent = "Dark Chocolate Fondue";
   const dessertDescriptionTwo = document.createElement("p");
   dessertDescriptionTwo.textContent = "A pot of rich, melted dark chocolate for dipping fresh fruit, marshmallows, and pound cake.";
 
   const dessertThree = document.createElement('div');
+  dessertThree.classList.add('box');
   const dessertNameThree = document.createElement("h3");
   dessertNameThree.textContent = "Chocolate Chip Cookie Dough Cheesecake";
   const dessertDescriptionThree = document.createElement("p");
@@ -109,8 +125,11 @@ const menu = () => {
 
   // Beverages:
   const beverageContainer = document.createElement("div");
+  beverageContainer.classList.add('course');
   const beverageOne = document.createElement('div');
+  beverageOne.classList.add('box');
   const beverage = document.createElement("h2");
+  beverage.classList.add('course-title');
   beverage.textContent = "Beverage";
   const beverageNameOne = document.createElement("h3");
   beverageNameOne.textContent = "Hot Chocolate";
@@ -118,12 +137,14 @@ const menu = () => {
   beverageDescriptionOne.textContent = "A classic blend of rich, velvety chocolate and steamed milk, topped with whipped cream and chocolate shavings.";
 
   const beverageTwo = document.createElement('div');
+  beverageTwo.classList.add('box');
   const beverageNameTwo = document.createElement("h3");
   beverageNameTwo.textContent = "Chocolate Martini";
   const beverageDescriptionTwo = document.createElement("p");
   beverageDescriptionTwo.textContent = "A creamy, indulgent blend of chocolate liqueur, vodka, and cream, garnished with a chocolate-dipped strawberry.";
 
   const beverageThree = document.createElement('div');
+  beverageThree.classList.add('box');
   const beverageNameThree = document.createElement("h3");
   beverageNameThree.textContent = "Chocolate Milkshake";
   const beverageDescriptionThree = document.createElement("p");

@@ -12,6 +12,7 @@ html {
 :root {
     --main-color: #9c6644;
     --side-color: #7f5539;
+    --side-color-dark: #402b1d;
     --complementary-color: #b08968;
     --complementary-color2: #ddb892;
     --contrast-color: #e6ccb2;
@@ -152,4 +153,28 @@ img {
 }
 span {
     font-weight: bold;
+}
+
+/* Menu */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+}
+.course {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+}
+.course-title {
+    max-width: max-content;
+    color: var(--contrast-color);
+    padding-bottom: 2px;
+    border-bottom: ridge 5px var(--complementary-color);
+}
+h3 {
+    color: var(--side-color-dark);
+    /* text-align: center; */
 }
