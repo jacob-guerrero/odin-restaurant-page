@@ -95,11 +95,12 @@ const menu = () => {
   const entreeThree = document.createElement('div');
   entreeThree.classList.add('box');
   const entreeNameThree = document.createElement("h3");
+  entreeNameThree.textContent = "Mushroom and Truffle Risotto";
   const entreeImg3 = document.createElement("img");
   entreeImg3.src = entree3;
-  entreeNameThree.textContent = "Mushroom and Truffle Risotto";
   const entreeDescriptionThree = document.createElement("p");
   entreeDescriptionThree.textContent = "Creamy risotto with earthy mushrooms, shaved truffles, and a touch of dark chocolate, finished with Parmesan cheese and fresh herbs.";
+
   entreeContainer.appendChild(entree);
   entreeOne.append(entreeNameOne, entreeImg1, entreeDescriptionOne);
   entreeContainer.appendChild(entreeOne);
@@ -119,6 +120,8 @@ const menu = () => {
   dessertOne.classList.add('box');
   const dessertNameOne = document.createElement("h3");
   dessertNameOne.textContent = "Chocolate Molten Cake";
+  const dessertImg1 = document.createElement("img");
+  dessertImg1.src = dessert1;
   const dessertDescriptionOne = document.createElement("p");
   dessertDescriptionOne.textContent = "A warm, gooey chocolate cake with a molten center, served with a scoop of vanilla ice cream and fresh berries.";
 
@@ -126,6 +129,8 @@ const menu = () => {
   dessertTwo.classList.add('box');
   const dessertNameTwo = document.createElement("h3");
   dessertNameTwo.textContent = "Dark Chocolate Fondue";
+  const dessertImg2 = document.createElement("img");
+  dessertImg2.src = dessert2;
   const dessertDescriptionTwo = document.createElement("p");
   dessertDescriptionTwo.textContent = "A pot of rich, melted dark chocolate for dipping fresh fruit, marshmallows, and pound cake.";
 
@@ -133,17 +138,17 @@ const menu = () => {
   dessertThree.classList.add('box');
   const dessertNameThree = document.createElement("h3");
   dessertNameThree.textContent = "Chocolate Chip Cookie Dough Cheesecake";
+  const dessertImg3 = document.createElement("img");
+  dessertImg3.src = dessert3;
   const dessertDescriptionThree = document.createElement("p");
   dessertDescriptionThree.textContent = "A decadent cheesecake filled with chunks of chocolate chip cookie dough and topped with a chocolate drizzle.";
+  
   dessertContainer.appendChild(dessert);
-  dessertOne.appendChild(dessertNameOne);
-  dessertOne.appendChild(dessertDescriptionOne);
+  dessertOne.append(dessertNameOne, dessertImg1, dessertDescriptionOne);
   dessertContainer.appendChild(dessertOne);
-  dessertTwo.appendChild(dessertNameTwo);
-  dessertTwo.appendChild(dessertDescriptionTwo);
+  dessertTwo.append(dessertNameTwo, dessertImg2, dessertDescriptionTwo);
   dessertContainer.appendChild(dessertTwo);
-  dessertThree.appendChild(dessertNameThree);
-  dessertThree.appendChild(dessertDescriptionThree);
+  dessertThree.append(dessertNameThree, dessertImg3, dessertDescriptionThree);
   dessertContainer.appendChild(dessertThree);
 
   // Beverages:
@@ -173,6 +178,7 @@ const menu = () => {
   beverageNameThree.textContent = "Chocolate Milkshake";
   const beverageDescriptionThree = document.createElement("p");
   beverageDescriptionThree.textContent = "A thick, creamy milkshake made with real chocolate ice cream and topped with whipped cream and chocolate syrup.";
+  
   beverageContainer.appendChild(beverage);
   beverageOne.appendChild(beverageNameOne);
   beverageOne.appendChild(beverageDescriptionOne);
