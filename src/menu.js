@@ -1,3 +1,16 @@
+import appetizer1 from './appetizer1.jpg';
+import appetizer2 from './appetizer2.jpg';
+import appetizer3 from './appetizer3.jpg';
+import entree1 from './entree1.jpg';
+import entree2 from './entree2.jpg';
+import entree3 from './entree3.jpg';
+import dessert1 from './dessert1.jpg';
+import dessert2 from './dessert2.jpg';
+import dessert3 from './dessert3.jpg';
+import beverage1 from './beverage1.jpg';
+import beverage2 from './beverage2.jpg';
+import beverage3 from './beverage3.jpg';
+
 const menu = () => {
   const content = document.querySelector("#content");
 
@@ -15,13 +28,16 @@ const menu = () => {
   // Appetizers:
   const appetizerContainer = document.createElement("div");
   appetizerContainer.classList.add('course');
-  const appetizerOne = document.createElement('div');
-  appetizerOne.classList.add('box');
   const appetizer = document.createElement("h2");
   appetizer.classList.add('course-title');
   appetizer.textContent = "Appetizer";
+
+  const appetizerOne = document.createElement('div');
+  appetizerOne.classList.add('box');
   const appetizerNameOne = document.createElement("h3");
   appetizerNameOne.textContent = "Chocolate-Stuffed Strawberries";
+  const appetizerImg1 = document.createElement("img");
+  appetizerImg1.src = appetizer1;
   const appetizerDescriptionOne = document.createElement("p");
   appetizerDescriptionOne.textContent = "Fresh strawberries filled with creamy chocolate ganache, served with a dollop of whipped cream and a sprinkle of cocoa powder.";
 
@@ -29,6 +45,8 @@ const menu = () => {
   appetizerTwo.classList.add('box');
   const appetizerNameTwo = document.createElement("h3");
   appetizerNameTwo.textContent = "Chocolate and Cheese Board";
+  const appetizerImg2 = document.createElement("img");
+  appetizerImg2.src = appetizer2;
   const appetizerDescriptionTwo = document.createElement("p");
   appetizerDescriptionTwo.textContent = "A selection of artisanal cheeses paired with rich chocolate, fresh fruit, and toasted nuts.";
 
@@ -36,17 +54,17 @@ const menu = () => {
   appetizerThree.classList.add('box');
   const appetizerNameThree = document.createElement("h3");
   appetizerNameThree.textContent = "Cocoa-Dusted Popcorn";
+  const appetizerImg3 = document.createElement("img");
+  appetizerImg3.src = appetizer3;
   const appetizerDescriptionThree = document.createElement("p");
   appetizerDescriptionThree.textContent = "Sweet and salty popcorn coated in rich, velvety cocoa powder.";
+
   appetizerContainer.appendChild(appetizer);
-  appetizerOne.appendChild(appetizerNameOne);
-  appetizerOne.appendChild(appetizerDescriptionOne);
+  appetizerOne.append(appetizerNameOne, appetizerImg1 , appetizerDescriptionOne);
   appetizerContainer.appendChild(appetizerOne);
-  appetizerTwo.appendChild(appetizerNameTwo);
-  appetizerTwo.appendChild(appetizerDescriptionTwo);
+  appetizerTwo.append(appetizerNameTwo, appetizerImg2, appetizerDescriptionTwo);
   appetizerContainer.appendChild(appetizerTwo);
-  appetizerThree.appendChild(appetizerNameThree);
-  appetizerThree.appendChild(appetizerDescriptionThree);
+  appetizerThree.append(appetizerNameThree, appetizerImg3, appetizerDescriptionThree);
   appetizerContainer.appendChild(appetizerThree);
 
   // Entrees:

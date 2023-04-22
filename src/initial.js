@@ -4,20 +4,20 @@ const pageLoad = () => {
   console.log("Hi, everyone!!");
   const content = document.querySelector("#content");
 
-  const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main-div')
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add("main-div");
   const restaurantImg = document.createElement("img");
   restaurantImg.src = Img;
 
   const title = document.createElement("h1");
   title.textContent = "Decadence by Cocoa";
-  title.classList.add('main-title');
+  title.classList.add("main-title");
 
   mainDiv.appendChild(title);
   mainDiv.appendChild(restaurantImg);
 
   const description = document.createElement("p");
-  description.classList.add('description');
+  description.classList.add("description");
   description.textContent =
     "Indulge in the ultimate chocolate experience at Decadence by Cocoa. Our carefully crafted menu showcases the best of the chocolate world, while our refined and elegant ambiance creates an unforgettable atmosphere.";
 

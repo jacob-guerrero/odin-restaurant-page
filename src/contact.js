@@ -1,12 +1,12 @@
 const contact = () => {
   const content = document.querySelector("#content");
 
-  const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main-div');
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add("main-div");
 
   const title = document.createElement("h1");
   title.textContent = "Contact Us";
-  title.classList.add('main-title');
+  title.classList.add("main-title");
   mainDiv.appendChild(title);
 
   const mainContainer = document.createElement("div");
@@ -39,7 +39,7 @@ const contact = () => {
   mainContainer.appendChild(emailContainer);
 
   content.appendChild(mainDiv);
-  content.appendChild(mainContainer); 
+  content.appendChild(mainContainer);
 };
 
 export { contact };

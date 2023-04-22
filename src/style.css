@@ -168,6 +168,13 @@ span {
     grid-template-rows: auto;
     gap: 1.5rem;
 }
+.course .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
 .course-title {
     max-width: max-content;
     color: var(--contrast-color);
@@ -176,5 +183,4 @@ span {
 }
 h3 {
     color: var(--side-color-dark);
-    /* text-align: center; */
 }
