@@ -70,13 +70,16 @@ const menu = () => {
   // Entrees:
   const entreeContainer = document.createElement("div");
   entreeContainer.classList.add('course');
-  const entreeOne = document.createElement('div');
-  entreeOne.classList.add('box');
   const entree = document.createElement("h2");
   entree.classList.add('course-title');
   entree.textContent = "Entree";
+
+  const entreeOne = document.createElement('div');
+  entreeOne.classList.add('box');
   const entreeNameOne = document.createElement("h3");
   entreeNameOne.textContent = "Cocoa-Rubbed Steak";
+  const entreeImg1 = document.createElement("img");
+  entreeImg1.src = entree1;
   const entreeDescriptionOne = document.createElement("p");
   entreeDescriptionOne.textContent = "A juicy steak seasoned with a blend of cocoa powder, smoked paprika, and spices, served with a side of roasted sweet potatoes and sautéed kale.";
   
@@ -84,34 +87,36 @@ const menu = () => {
   entreeTwo.classList.add('box');
   const entreeNameTwo = document.createElement("h3");
   entreeNameTwo.textContent = "Chocolate-Crusted Salmon";
+  const entreeImg2 = document.createElement("img");
+  entreeImg2.src = entree2;
   const entreeDescriptionTwo = document.createElement("p");
   entreeDescriptionTwo.textContent = "A fillet of fresh salmon coated in a crunchy chocolate crust, served with a side of roasted vegetables and a drizzle of balsamic reduction.";
 
   const entreeThree = document.createElement('div');
   entreeThree.classList.add('box');
   const entreeNameThree = document.createElement("h3");
+  const entreeImg3 = document.createElement("img");
+  entreeImg3.src = entree3;
   entreeNameThree.textContent = "Mushroom and Truffle Risotto";
   const entreeDescriptionThree = document.createElement("p");
   entreeDescriptionThree.textContent = "Creamy risotto with earthy mushrooms, shaved truffles, and a touch of dark chocolate, finished with Parmesan cheese and fresh herbs.";
   entreeContainer.appendChild(entree);
-  entreeOne.appendChild(entreeNameOne);
-  entreeOne.appendChild(entreeDescriptionOne);
+  entreeOne.append(entreeNameOne, entreeImg1, entreeDescriptionOne);
   entreeContainer.appendChild(entreeOne);
-  entreeTwo.appendChild(entreeNameTwo);
-  entreeTwo.appendChild(entreeDescriptionTwo);
+  entreeTwo.append(entreeNameTwo, entreeImg2, entreeDescriptionTwo);
   entreeContainer.appendChild(entreeTwo);
-  entreeThree.appendChild(entreeNameThree);
-  entreeThree.appendChild(entreeDescriptionThree);
+  entreeThree.append(entreeNameThree, entreeImg3,entreeDescriptionThree);
   entreeContainer.appendChild(entreeThree);
 
   // Desserts:
   const dessertContainer = document.createElement("div");
   dessertContainer.classList.add('course');
-  const dessertOne = document.createElement('div');
-  dessertOne.classList.add('box');
   const dessert = document.createElement("h2");
   dessert.classList.add('course-title');
   dessert.textContent = "Dessert";
+
+  const dessertOne = document.createElement('div');
+  dessertOne.classList.add('box');
   const dessertNameOne = document.createElement("h3");
   dessertNameOne.textContent = "Chocolate Molten Cake";
   const dessertDescriptionOne = document.createElement("p");
@@ -144,11 +149,12 @@ const menu = () => {
   // Beverages:
   const beverageContainer = document.createElement("div");
   beverageContainer.classList.add('course');
-  const beverageOne = document.createElement('div');
-  beverageOne.classList.add('box');
   const beverage = document.createElement("h2");
   beverage.classList.add('course-title');
   beverage.textContent = "Beverage";
+
+  const beverageOne = document.createElement('div');
+  beverageOne.classList.add('box');
   const beverageNameOne = document.createElement("h3");
   beverageNameOne.textContent = "Hot Chocolate";
   const beverageDescriptionOne = document.createElement("p");
