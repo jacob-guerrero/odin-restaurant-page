@@ -125,6 +125,7 @@ img {
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    color:var(--contrast-color2);
 }
 .description::after, .description::before {
     content: '"';
@@ -136,4 +137,19 @@ img {
     background-color: var(--complementary-color2);
     box-shadow: -15px -15px 0px -10px var(--main-color),
     15px 15px 0px -10px var(--main-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+}
+.customer {
+    font-weight: bold;
+    text-align: right;
+}
+
+.schedule.box p {
+    padding-left: 0.5rem;
+}
+span {
+    font-weight: bold;
 }

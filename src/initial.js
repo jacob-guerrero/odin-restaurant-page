@@ -28,6 +28,7 @@ const pageLoad = () => {
     "We believe that chocolate is more than just a dessert, it's an experience to be savored and appreciated.";
   const commentUserOneName = document.createElement("p");
   commentUserOneName.textContent = "- General Manager";
+  commentUserOneName.classList.add("customer");
   divOne.appendChild(commentUserOne);
   divOne.appendChild(commentUserOneName);
 
@@ -38,6 +39,7 @@ const pageLoad = () => {
     "I have to say, my taste buds have never been happier than they were at this chocolate restaurant. The first bite of the chocolate lava cake was like a warm embrace from an old friend.";
   const commentUserTwoName = document.createElement("p");
   commentUserTwoName.textContent = "- Happy Costumer";
+  commentUserTwoName.classList.add("customer");
   divTwo.appendChild(commentUserTwo);
   divTwo.appendChild(commentUserTwoName);
 
@@ -48,6 +50,7 @@ const pageLoad = () => {
     "I couldn't get enough of the rich, gooey goodness that melted in my mouth like a dream. And let's not forget about the drinks! The hot chocolate was so decadent and creamy, it was like sipping on liquid gold.";
   const commentUserThreeName = document.createElement("p");
   commentUserThreeName.textContent = "- Food Critic";
+  commentUserThreeName.classList.add("customer");
   divThree.appendChild(commentUserThree);
   divThree.appendChild(commentUserThreeName);
 
@@ -58,6 +61,7 @@ const pageLoad = () => {
     "The atmosphere of the restaurant was cozy and inviting, with a touch of elegance that made me feel like royalty. I'll definitely be back for more chocolatey magic!";
   const commentUserFourName = document.createElement("p");
   commentUserFourName.textContent = "- Another Happy Customer";
+  commentUserFourName.classList.add("customer");
   divFour.appendChild(commentUserFour);
   divFour.appendChild(commentUserFourName);
 
@@ -66,26 +70,48 @@ const pageLoad = () => {
   const scheduleTitle = document.createElement("h2");
   scheduleTitle.textContent = "Schedule";
   const scheduleMon = document.createElement("p");
-  scheduleMon.textContent = "Monday: 8:00am - 6:00pm";
+  const spanMon = document.createElement("span");
+  spanMon.textContent = "Monday: ";
+  scheduleMon.textContent = "8:00am - 6:00pm";
   const scheduleTue = document.createElement("p");
-  scheduleTue.textContent = "Tuesday: 8:00am - 6:00pm";
+  const spanTue = document.createElement("span");
+  spanTue.textContent = "Tuesday: ";
+  scheduleTue.textContent = "8:00am - 6:00pm";
   const scheduleWed = document.createElement("p");
-  scheduleWed.textContent = "Wednesday: 8:00am - 6:00pm";
+  const spanWed = document.createElement("span");
+  spanWed.textContent = "Wednesday: ";
+  scheduleWed.textContent = "8:00am - 6:00pm";
   const scheduleThu = document.createElement("p");
-  scheduleThu.textContent = "Thursday: 8:00am - 6:00pm";
+  const spanThu = document.createElement("span");
+  spanThu.textContent = "Thursday: ";
+  scheduleThu.textContent = "8:00am - 6:00pm";
   const scheduleFri = document.createElement("p");
-  scheduleFri.textContent = "Friday: 10:00am - 10:00pm";
+  const spanFri = document.createElement("span");
+  spanFri.textContent = "Friday: ";
+  scheduleFri.textContent = "10:00am - 10:00pm";
   const scheduleSat = document.createElement("p");
-  scheduleSat.textContent = "Saturday: 10:00am - 10:00pm";
+  const spanSat = document.createElement("span");
+  spanSat.textContent = "Saturday: ";
+  scheduleSat.textContent = "10:00am - 10:00pm";
   const scheduleSun = document.createElement("p");
-  scheduleSun.textContent = "Sunday: 10:00am - 10:00pm";
+  const spanSun = document.createElement("span");
+  spanSun.textContent = "Sunday: ";
+  scheduleSun.textContent = "10:00am - 10:00pm";
+
   divSchedule.appendChild(scheduleTitle);
+  scheduleMon.prepend(spanMon);
   divSchedule.appendChild(scheduleMon);
+  scheduleTue.prepend(spanTue);
   divSchedule.appendChild(scheduleTue);
+  scheduleWed.prepend(spanWed);
   divSchedule.appendChild(scheduleWed);
+  scheduleThu.prepend(spanThu);
   divSchedule.appendChild(scheduleThu);
+  scheduleFri.prepend(spanFri);
   divSchedule.appendChild(scheduleFri);
+  scheduleSat.prepend(spanSat);
   divSchedule.appendChild(scheduleSat);
+  scheduleSun.prepend(spanSun);
   divSchedule.appendChild(scheduleSun);
 
   content.appendChild(mainDiv);
