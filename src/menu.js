@@ -59,13 +59,10 @@ const menu = () => {
   const appetizerDescriptionThree = document.createElement("p");
   appetizerDescriptionThree.textContent = "Sweet and salty popcorn coated in rich, velvety cocoa powder.";
 
-  appetizerContainer.appendChild(appetizer);
   appetizerOne.append(appetizerNameOne, appetizerImg1 , appetizerDescriptionOne);
-  appetizerContainer.appendChild(appetizerOne);
   appetizerTwo.append(appetizerNameTwo, appetizerImg2, appetizerDescriptionTwo);
-  appetizerContainer.appendChild(appetizerTwo);
   appetizerThree.append(appetizerNameThree, appetizerImg3, appetizerDescriptionThree);
-  appetizerContainer.appendChild(appetizerThree);
+  appetizerContainer.append(appetizer, appetizerOne, appetizerTwo, appetizerThree);
 
   // Entrees:
   const entreeContainer = document.createElement("div");
@@ -101,13 +98,10 @@ const menu = () => {
   const entreeDescriptionThree = document.createElement("p");
   entreeDescriptionThree.textContent = "Creamy risotto with earthy mushrooms, shaved truffles, and a touch of dark chocolate, finished with Parmesan cheese and fresh herbs.";
 
-  entreeContainer.appendChild(entree);
   entreeOne.append(entreeNameOne, entreeImg1, entreeDescriptionOne);
-  entreeContainer.appendChild(entreeOne);
   entreeTwo.append(entreeNameTwo, entreeImg2, entreeDescriptionTwo);
-  entreeContainer.appendChild(entreeTwo);
   entreeThree.append(entreeNameThree, entreeImg3,entreeDescriptionThree);
-  entreeContainer.appendChild(entreeThree);
+  entreeContainer.append(entree, entreeOne, entreeTwo, entreeThree);
 
   // Desserts:
   const dessertContainer = document.createElement("div");
@@ -143,13 +137,10 @@ const menu = () => {
   const dessertDescriptionThree = document.createElement("p");
   dessertDescriptionThree.textContent = "A decadent cheesecake filled with chunks of chocolate chip cookie dough and topped with a chocolate drizzle.";
   
-  dessertContainer.appendChild(dessert);
   dessertOne.append(dessertNameOne, dessertImg1, dessertDescriptionOne);
-  dessertContainer.appendChild(dessertOne);
   dessertTwo.append(dessertNameTwo, dessertImg2, dessertDescriptionTwo);
-  dessertContainer.appendChild(dessertTwo);
   dessertThree.append(dessertNameThree, dessertImg3, dessertDescriptionThree);
-  dessertContainer.appendChild(dessertThree);
+  dessertContainer.append(dessert, dessertOne, dessertTwo, dessertThree);
 
   // Beverages:
   const beverageContainer = document.createElement("div");
@@ -162,6 +153,8 @@ const menu = () => {
   beverageOne.classList.add('box');
   const beverageNameOne = document.createElement("h3");
   beverageNameOne.textContent = "Hot Chocolate";
+  const beverageImg1 = document.createElement("img");
+  beverageImg1.src = beverage1;
   const beverageDescriptionOne = document.createElement("p");
   beverageDescriptionOne.textContent = "A classic blend of rich, velvety chocolate and steamed milk, topped with whipped cream and chocolate shavings.";
 
@@ -169,6 +162,8 @@ const menu = () => {
   beverageTwo.classList.add('box');
   const beverageNameTwo = document.createElement("h3");
   beverageNameTwo.textContent = "Chocolate Martini";
+  const beverageImg2 = document.createElement("img");
+  beverageImg2.src = beverage2;
   const beverageDescriptionTwo = document.createElement("p");
   beverageDescriptionTwo.textContent = "A creamy, indulgent blend of chocolate liqueur, vodka, and cream, garnished with a chocolate-dipped strawberry.";
 
@@ -176,27 +171,19 @@ const menu = () => {
   beverageThree.classList.add('box');
   const beverageNameThree = document.createElement("h3");
   beverageNameThree.textContent = "Chocolate Milkshake";
+  const beverageImg3 = document.createElement("img");
+  beverageImg3.src = beverage3;
   const beverageDescriptionThree = document.createElement("p");
   beverageDescriptionThree.textContent = "A thick, creamy milkshake made with real chocolate ice cream and topped with whipped cream and chocolate syrup.";
   
-  beverageContainer.appendChild(beverage);
-  beverageOne.appendChild(beverageNameOne);
-  beverageOne.appendChild(beverageDescriptionOne);
-  beverageContainer.appendChild(beverageOne);
-  beverageTwo.appendChild(beverageNameTwo);
-  beverageTwo.appendChild(beverageDescriptionTwo);
-  beverageContainer.appendChild(beverageTwo);
-  beverageThree.appendChild(beverageNameThree);
-  beverageThree.appendChild(beverageDescriptionThree);
-  beverageContainer.appendChild(beverageThree);
+  beverageOne.append(beverageNameOne, beverageImg1, beverageDescriptionOne);
+  beverageTwo.append(beverageNameTwo, beverageImg2, beverageDescriptionTwo);
+  beverageThree.append(beverageNameThree, beverageImg3, beverageDescriptionThree);
+  beverageContainer.append(beverage, beverageOne, beverageTwo, beverageThree);
 
-  mainContainer.appendChild(appetizerContainer);
-  mainContainer.appendChild(entreeContainer);
-  mainContainer.appendChild(dessertContainer);
-  mainContainer.appendChild(beverageContainer);
+  mainContainer.append(appetizerContainer, entreeContainer, dessertContainer, beverageContainer);
  
-  content.appendChild(mainDiv);
-  content.appendChild(mainContainer);
+  content.append(mainDiv, mainContainer);
 };
 
 export { menu };
