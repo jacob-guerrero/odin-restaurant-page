@@ -22,7 +22,7 @@ const pageLoad = () => {
     "Indulge in the ultimate chocolate experience at Decadence by Cocoa. Our carefully crafted menu showcases the best of the chocolate world, while our refined and elegant ambiance creates an unforgettable atmosphere.";
 
   const divOne = document.createElement("div");
-  divOne.classList.add("comment");
+  divOne.classList.add("comment", "box");
   const commentUserOne = document.createElement("q");
   commentUserOne.textContent =
     "We believe that chocolate is more than just a dessert, it's an experience to be savored and appreciated.";
@@ -32,7 +32,7 @@ const pageLoad = () => {
   divOne.appendChild(commentUserOneName);
 
   const divTwo = document.createElement("div");
-  divTwo.classList.add("comment");
+  divTwo.classList.add("comment", "box");
   const commentUserTwo = document.createElement("q");
   commentUserTwo.textContent =
     "I have to say, my taste buds have never been happier than they were at this chocolate restaurant. The first bite of the chocolate lava cake was like a warm embrace from an old friend.";
@@ -42,7 +42,7 @@ const pageLoad = () => {
   divTwo.appendChild(commentUserTwoName);
 
   const divThree = document.createElement("div");
-  divThree.classList.add("comment");
+  divThree.classList.add("comment", "box");
   const commentUserThree = document.createElement("q");
   commentUserThree.textContent =
     "I couldn't get enough of the rich, gooey goodness that melted in my mouth like a dream. And let's not forget about the drinks! The hot chocolate was so decadent and creamy, it was like sipping on liquid gold.";
@@ -52,7 +52,7 @@ const pageLoad = () => {
   divThree.appendChild(commentUserThreeName);
 
   const divFour = document.createElement("div");
-  divFour.classList.add("comment");
+  divFour.classList.add("comment", "box");
   const commentUserFour = document.createElement("q");
   commentUserFour.textContent =
     "The atmosphere of the restaurant was cozy and inviting, with a touch of elegance that made me feel like royalty. I'll definitely be back for more chocolatey magic!";
@@ -62,7 +62,7 @@ const pageLoad = () => {
   divFour.appendChild(commentUserFourName);
 
   const divSchedule = document.createElement("div");
-  divSchedule.classList.add("schedule");
+  divSchedule.classList.add("schedule", "box");
   const scheduleTitle = document.createElement("h2");
   scheduleTitle.textContent = "Schedule";
   const scheduleMon = document.createElement("p");

@@ -1,7 +1,13 @@
 const menu = () => {
+  const content = document.querySelector("#content");
+
+  const mainDiv = document.createElement('div');
+  mainDiv.classList.add('main-div');
+
   const title = document.createElement("h1");
-  title.classList.add('main-title');
   title.textContent = "Menu";
+  title.classList.add('main-title');
+  mainDiv.appendChild(title);
 
   const mainContainer = document.createElement("div");
 
@@ -137,9 +143,8 @@ const menu = () => {
   mainContainer.appendChild(entreeContainer);
   mainContainer.appendChild(dessertContainer);
   mainContainer.appendChild(beverageContainer);
-
-  const content = document.querySelector("#content");
-  content.appendChild(title);
+ 
+  content.appendChild(mainDiv);
   content.appendChild(mainContainer);
 };
 

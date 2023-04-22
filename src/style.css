@@ -10,13 +10,14 @@ html {
     box-sizing: inherit;
 }
 :root {
-    --main-color: #fffcf2;
-    --side-color: #252422;
-    --contrast-color: #eb5e28;
+    --main-color: #9c6644;
+    --side-color: #7f5539;
+    --complementary-color: #b08968;
+    --complementary-color2: #ddb892;
+    --contrast-color: #e6ccb2;
+    --contrast-color2: #ede0d4;
     --gray-light: #ccc5b9;
     --gray-dark: #403d39;
-    --blue-light: #00afb9;
-    --blue-dark: #0081a7;
 }
 @font-face {
     font-family: 'Dance Font';
@@ -65,9 +66,10 @@ header {
     align-items: center;
     font-size: 1.4rem;
     font-weight: bold;
+    color: var(--contrast-color);
     border-radius: 5px  5px 0% 0%;
     background-color: var(--main-color);
-    /* background-image: url("./squares.jpg") ; */
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("./squares.jpg"), var(--main-color) ;
     background-size: cover;
 }
 ul {
@@ -82,7 +84,7 @@ li {
 #content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1.2rem;
     border: 1px solid black;
     border-radius: 5px;
@@ -102,7 +104,8 @@ li {
 .main-title {
     font-family: 'Dance Font','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.5rem;
-    border-bottom: 5px double black;
+    color: var(--contrast-color);
+    border-bottom: 5px double var(--contrast-color);
     padding: 0.2rem 0.5rem;
 }
 img {
@@ -115,7 +118,7 @@ img {
     border: calc(2*var(--s)) solid #0000;
     /* outline: 2px solid #000; */
     outline-offset: calc(-1*var(--s));
-    background: conic-gradient(from 90deg at 2px 2px,#0000 25%,#000 0);
+    background: conic-gradient(from 90deg at 2px 2px,#0000 25%,var(--main-color) 0);
 }
 
 .description {
@@ -125,4 +128,12 @@ img {
 }
 .description::after, .description::before {
     content: '"';
+}
+
+.box {
+    padding: 1rem 0.5rem;
+    border-radius: 4px;
+    background-color: var(--complementary-color2);
+    box-shadow: -15px -15px 0px -10px var(--main-color),
+    15px 15px 0px -10px var(--main-color);
 }
