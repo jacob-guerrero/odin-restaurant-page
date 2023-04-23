@@ -1,4 +1,4 @@
-import Img from "./restaurant.jpg";
+import Img from "./img/restaurant.jpg";
 
 const pageLoad = () => {
   const content = document.querySelector("#content");

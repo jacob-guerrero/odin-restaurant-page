@@ -1,15 +1,15 @@
-import appetizer1 from "./appetizer1.jpg";
-import appetizer2 from "./appetizer2.jpg";
-import appetizer3 from "./appetizer3.jpg";
-import entree1 from "./entree1.jpg";
-import entree2 from "./entree2.jpg";
-import entree3 from "./entree3.jpg";
-import dessert1 from "./dessert1.jpg";
-import dessert2 from "./dessert2.jpg";
-import dessert3 from "./dessert3.jpg";
-import beverage1 from "./beverage1.jpg";
-import beverage2 from "./beverage2.jpg";
-import beverage3 from "./beverage3.jpg";
+import appetizer1 from "./img/appetizer1.jpg";
+import appetizer2 from "./img/appetizer2.jpg";
+import appetizer3 from "./img/appetizer3.jpg";
+import entree1 from "./img/entree1.jpg";
+import entree2 from "./img/entree2.jpg";
+import entree3 from "./img/entree3.jpg";
+import dessert1 from "./img/dessert1.jpg";
+import dessert2 from "./img/dessert2.jpg";
+import dessert3 from "./img/dessert3.jpg";
+import beverage1 from "./img/beverage1.jpg";
+import beverage2 from "./img/beverage2.jpg";
+import beverage3 from "./img/beverage3.jpg";
 
 const menu = () => {
   const content = document.querySelector("#content");

@@ -40,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2rem 3rem 2rem 3rem;
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./bg2pattern.jpg") repeat, var(--main-color);
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("./img/bg2pattern.jpg") repeat, var(--main-color);
     background-size: 100% auto;
 }
 
@@ -70,7 +70,7 @@ header {
     color: var(--contrast-color);
     border-radius: 5px  5px 0% 0%;
     background-color: var(--main-color);
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("./squares.jpg"), var(--main-color) ;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("./img/squares.jpg"), var(--main-color);
     background-size: cover;
 }
 ul {
@@ -90,7 +90,7 @@ li {
     border: 1px solid black;
     border-radius: 5px;
     background-color: var(--gray-light);
-    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("./bg3light.jpg") top center repeat, var(--main-color);
+    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("./img/bg3light.jpg") top center repeat, var(--main-color);
 }
 
 
@@ -191,4 +191,9 @@ h3, .box h2, span {
 
 .tab:hover {
     cursor: pointer;
+}
+.tab.active {
+    color: var(--complementary-color2);
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("./img/squares.jpg"), var(--main-color);
+    background-size: cover;
 }
