@@ -1,7 +1,6 @@
 import Img from "./restaurant.jpg";
 
 const pageLoad = () => {
-  console.log("Hi, everyone!!");
   const content = document.querySelector("#content");
 
   const mainDiv = document.createElement("div");
