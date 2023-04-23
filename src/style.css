@@ -90,8 +90,7 @@ li {
     border: 1px solid black;
     border-radius: 5px;
     background-color: var(--gray-light);
-    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("./bg3light.jpg") center, var(--main-color);
-    background-size: cover;
+    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url("./bg3light.jpg") top center repeat, var(--main-color);
 }
 
 
@@ -146,16 +145,17 @@ img {
 .customer {
     font-weight: bold;
     text-align: right;
+    color: var(--side-color-dark);
 }
 
 .schedule.box p {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
 }
 span {
     font-weight: bold;
 }
 
-/* Menu */
+/* Menu and Contact*/
 .main-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -181,6 +181,10 @@ span {
     padding-bottom: 2px;
     border-bottom: ridge 5px var(--complementary-color);
 }
-h3 {
+h3, .box h2, span {
     color: var(--side-color-dark);
+}
+
+.contact-info {
+    padding-left: 1rem;
 }

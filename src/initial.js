@@ -98,29 +98,33 @@ const pageLoad = () => {
   spanSun.textContent = "Sunday: ";
   scheduleSun.textContent = "10:00am - 10:00pm";
 
-  divSchedule.appendChild(scheduleTitle);
+  divSchedule.append(
+    scheduleTitle,
+    scheduleMon,
+    scheduleTue,
+    scheduleWed,
+    scheduleThu,
+    scheduleFri,
+    scheduleSat,
+    scheduleSun
+  );
   scheduleMon.prepend(spanMon);
-  divSchedule.appendChild(scheduleMon);
   scheduleTue.prepend(spanTue);
-  divSchedule.appendChild(scheduleTue);
   scheduleWed.prepend(spanWed);
-  divSchedule.appendChild(scheduleWed);
   scheduleThu.prepend(spanThu);
-  divSchedule.appendChild(scheduleThu);
   scheduleFri.prepend(spanFri);
-  divSchedule.appendChild(scheduleFri);
   scheduleSat.prepend(spanSat);
-  divSchedule.appendChild(scheduleSat);
   scheduleSun.prepend(spanSun);
-  divSchedule.appendChild(scheduleSun);
 
-  content.appendChild(mainDiv);
-  content.appendChild(description);
-  content.appendChild(divOne);
-  content.appendChild(divTwo);
-  content.appendChild(divThree);
-  content.appendChild(divFour);
-  content.appendChild(divSchedule);
+  content.append(
+    mainDiv,
+    description,
+    divOne,
+    divTwo,
+    divThree,
+    divFour,
+    divSchedule
+  );
 };
 
 export { pageLoad };

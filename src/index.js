@@ -10,8 +10,7 @@ const clearContent = () => {
     content.replaceChildren();
 }
 
-// pageLoad();
-menu();
+pageLoad();
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
