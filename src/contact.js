@@ -10,7 +10,7 @@ const contact = () => {
   mainDiv.appendChild(title);
 
   const mainContainer = document.createElement("div");
-  mainContainer.classList.add("main-container");
+  mainContainer.classList.add("main-container", "contact-box");
 
   const addressContainer = document.createElement("div");
   addressContainer.classList.add("box");
@@ -37,7 +37,7 @@ const contact = () => {
   const email = document.createElement("h2");
   email.textContent = "Email";
   const emailText = document.createElement("p");
-  emailText.textContent = "chocoCrush@sweetFake.com";
+  emailText.textContent = "chocoCrush @sweetFake.com";
   emailText.classList.add("contact-info");
   emailContainer.appendChild(email);
   emailContainer.appendChild(emailText);
